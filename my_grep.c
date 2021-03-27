@@ -1,11 +1,17 @@
-//Our own version of the command grep.
+//
+// Created by samuelguzman on 27/3/21.
+//
 
+#include "my_grep.h"
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <string.h>
+
+
 #define MAXSIZE 500
 
 int getLine(char *pattern, FILE *file){
@@ -24,7 +30,7 @@ int getLine(char *pattern, FILE *file){
 
 }
 
-int main(int argc, char* argv[])
+int executeGrep(int argc, char* argv[])
 {
 
     if(argc<3){

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/samuelguzman/CLionProjects/MyShell/my_grep.h
+
+/home/samuelguzman/CLionProjects/MyShell/my_shell.c
+readline/readline.h
+-
+readline/history.h
+-
+unistd.h
+-
+stdlib.h
+-
+sys/wait.h
+-
+my_grep.h
+/home/samuelguzman/CLionProjects/MyShell/my_grep.h
+
