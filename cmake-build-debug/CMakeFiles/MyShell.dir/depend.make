@@ -5,10 +5,14 @@ CMakeFiles/MyShell.dir/myShell0.c.o: ../myShell0.c
 CMakeFiles/MyShell.dir/myShell0.c.o: ../myShell0.h
 CMakeFiles/MyShell.dir/myShell0.c.o: ../my_cp.h
 CMakeFiles/MyShell.dir/myShell0.c.o: ../my_grep.h
+CMakeFiles/MyShell.dir/myShell0.c.o: ../my_help.h
 
 CMakeFiles/MyShell.dir/my_cp.c.o: ../my_cp.c
 CMakeFiles/MyShell.dir/my_cp.c.o: ../my_cp.h
 
 CMakeFiles/MyShell.dir/my_grep.c.o: ../my_grep.c
 CMakeFiles/MyShell.dir/my_grep.c.o: ../my_grep.h
+
+CMakeFiles/MyShell.dir/my_help.c.o: ../my_help.c
+CMakeFiles/MyShell.dir/my_help.c.o: ../my_help.h
 

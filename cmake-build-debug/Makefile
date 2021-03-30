@@ -224,6 +224,33 @@ my_grep.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_grep.c.s
 .PHONY : my_grep.c.s
 
+my_help.o: my_help.c.o
+
+.PHONY : my_help.o
+
+# target to build an object file
+my_help.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_help.c.o
+.PHONY : my_help.c.o
+
+my_help.i: my_help.c.i
+
+.PHONY : my_help.i
+
+# target to preprocess a source file
+my_help.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_help.c.i
+.PHONY : my_help.c.i
+
+my_help.s: my_help.c.s
+
+.PHONY : my_help.s
+
+# target to generate assembly for a file
+my_help.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_help.c.s
+.PHONY : my_help.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,6 +269,9 @@ help:
 	@echo "... my_grep.o"
 	@echo "... my_grep.i"
 	@echo "... my_grep.s"
+	@echo "... my_help.o"
+	@echo "... my_help.i"
+	@echo "... my_help.s"
 .PHONY : help
 
 

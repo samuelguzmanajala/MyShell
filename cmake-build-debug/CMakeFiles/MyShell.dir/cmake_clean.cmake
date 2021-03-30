@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyShell.dir/myShell0.c.o"
   "CMakeFiles/MyShell.dir/my_cp.c.o"
   "CMakeFiles/MyShell.dir/my_grep.c.o"
+  "CMakeFiles/MyShell.dir/my_help.c.o"
   "MyShell"
   "MyShell.pdb"
 )

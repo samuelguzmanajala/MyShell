@@ -100,6 +100,12 @@
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_grep.h">
 			<Option target="MyShell"/>
 		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_help.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_help.h">
+			<Option target="MyShell"/>
+		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

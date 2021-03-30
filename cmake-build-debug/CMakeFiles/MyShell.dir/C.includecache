@@ -25,10 +25,28 @@ my_grep.h
 /home/samuelguzman/CLionProjects/MyShell/my_grep.h
 my_cp.h
 /home/samuelguzman/CLionProjects/MyShell/my_cp.h
+my_help.h
+/home/samuelguzman/CLionProjects/MyShell/my_help.h
 
 /home/samuelguzman/CLionProjects/MyShell/myShell0.h
+
+/home/samuelguzman/CLionProjects/MyShell/my_cp.c
+fcntl.h
+-
+unistd.h
+-
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+my_cp.h
+/home/samuelguzman/CLionProjects/MyShell/my_cp.h
 
 /home/samuelguzman/CLionProjects/MyShell/my_cp.h
 
 /home/samuelguzman/CLionProjects/MyShell/my_grep.h
+
+/home/samuelguzman/CLionProjects/MyShell/my_help.h
 

@@ -68,7 +68,7 @@ int ms_cp(char **args) {
 
         fprintf(stderr, "ms: expected argument to \"cp\"\n");
 
-    } else if (args[3] != NULL) {
+    } else if (args[2] != NULL) {
         char *src = args[1];
         char *dest = args[2];
 
@@ -83,6 +83,7 @@ int ms_cp(char **args) {
                 dest[(i - 1)] = dest[i];
             }
             strcat(dest, "/");
+            printf("%s",dest);
             strcat(dest, src);
             copyFile(src, dest);
         } else {
@@ -91,5 +92,16 @@ int ms_cp(char **args) {
             }
         }
         return 1;
+    }
+}
+int ms_mv(char **args){
+
+    if(args[1] == NULL){
+        printf(stderr, "mv: expected argument to \"mv\"\n");
+    }else if( args[3] != NULL){
+        ms_cp(**args);
+
+    }else{
+
     }
 }

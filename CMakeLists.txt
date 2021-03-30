@@ -12,6 +12,6 @@ add_executable(MyShell
         #my_shell.c
         my_grep.c my_grep.h
         #my_shell_original.c
-        myShell0.c myShell0.h my_cp.c my_cp.h)
+        myShell0.c myShell0.h my_cp.c my_cp.h my_help.c my_help.h)
 
 target_link_libraries(MyShell readline)

@@ -14,6 +14,7 @@
 #include <sys/wait.h>
 #include "my_grep.h"
 #include "my_cp.h"
+#include "my_help.h"
 
 #define error(a) {perror(a); exit(1);};
 #define MAXLINE 200
@@ -78,15 +79,24 @@ void execute2(int numberOfArgs,char **parsed){
         ms_cp(parsed);
         printf("pegar comando copy");
     }
+    if (strcmp(parsed[0],"help")==0){
+        exHelp(numberOfArgs,parsed);
+        printf("pegar comando copy");
+    }
+    if (strcmp(parsed[0],"mv")==0){
+        ms_mv(parsed);
+        printf("pegar comando copy");
+    }
+
 }
 
 int execute(int argc, char *argv[])
 {
     if (strcmp(argv[0], "cd") == 0) {
+        chdir(argv[1]);
         char dir[1000];
         getcwd(dir, 1000);
         printf("\nuser: %s\n", dir);
-        chdir(argv[1]);
     }
 
     pid_t pid = fork();

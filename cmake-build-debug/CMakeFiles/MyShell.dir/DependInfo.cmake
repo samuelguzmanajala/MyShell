@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/samuelguzman/CLionProjects/MyShell/myShell0.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/myShell0.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/my_cp.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/my_grep.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_grep.c.o"
+  "/home/samuelguzman/CLionProjects/MyShell/my_help.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_help.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
