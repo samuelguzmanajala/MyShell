@@ -6,19 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/samuelguzman/CLionProjects/MyShell/my_grep.h
-
-/home/samuelguzman/CLionProjects/MyShell/my_shell.c
-readline/readline.h
+/home/samuelguzman/CLionProjects/MyShell/myShell0.c
+myShell0.h
+/home/samuelguzman/CLionProjects/MyShell/myShell0.h
+stdio.h
 -
-readline/history.h
+stdlib.h
 -
 unistd.h
 -
-stdlib.h
+string.h
+-
+errno.h
 -
 sys/wait.h
 -
 my_grep.h
+/home/samuelguzman/CLionProjects/MyShell/my_grep.h
+my_cp.h
+/home/samuelguzman/CLionProjects/MyShell/my_cp.h
+
+/home/samuelguzman/CLionProjects/MyShell/myShell0.h
+
+/home/samuelguzman/CLionProjects/MyShell/my_cp.h
+
 /home/samuelguzman/CLionProjects/MyShell/my_grep.h
 

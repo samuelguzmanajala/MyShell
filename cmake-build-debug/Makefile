@@ -143,6 +143,60 @@ MyShell/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/build
 .PHONY : MyShell/fast
 
+myShell0.o: myShell0.c.o
+
+.PHONY : myShell0.o
+
+# target to build an object file
+myShell0.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/myShell0.c.o
+.PHONY : myShell0.c.o
+
+myShell0.i: myShell0.c.i
+
+.PHONY : myShell0.i
+
+# target to preprocess a source file
+myShell0.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/myShell0.c.i
+.PHONY : myShell0.c.i
+
+myShell0.s: myShell0.c.s
+
+.PHONY : myShell0.s
+
+# target to generate assembly for a file
+myShell0.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/myShell0.c.s
+.PHONY : myShell0.c.s
+
+my_cp.o: my_cp.c.o
+
+.PHONY : my_cp.o
+
+# target to build an object file
+my_cp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cp.c.o
+.PHONY : my_cp.c.o
+
+my_cp.i: my_cp.c.i
+
+.PHONY : my_cp.i
+
+# target to preprocess a source file
+my_cp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cp.c.i
+.PHONY : my_cp.c.i
+
+my_cp.s: my_cp.c.s
+
+.PHONY : my_cp.s
+
+# target to generate assembly for a file
+my_cp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cp.c.s
+.PHONY : my_cp.c.s
+
 my_grep.o: my_grep.c.o
 
 .PHONY : my_grep.o
@@ -170,33 +224,6 @@ my_grep.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_grep.c.s
 .PHONY : my_grep.c.s
 
-my_shell.o: my_shell.c.o
-
-.PHONY : my_shell.o
-
-# target to build an object file
-my_shell.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_shell.c.o
-.PHONY : my_shell.c.o
-
-my_shell.i: my_shell.c.i
-
-.PHONY : my_shell.i
-
-# target to preprocess a source file
-my_shell.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_shell.c.i
-.PHONY : my_shell.c.i
-
-my_shell.s: my_shell.c.s
-
-.PHONY : my_shell.s
-
-# target to generate assembly for a file
-my_shell.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_shell.c.s
-.PHONY : my_shell.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,12 +233,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyShell"
+	@echo "... myShell0.o"
+	@echo "... myShell0.i"
+	@echo "... myShell0.s"
+	@echo "... my_cp.o"
+	@echo "... my_cp.i"
+	@echo "... my_cp.s"
 	@echo "... my_grep.o"
 	@echo "... my_grep.i"
 	@echo "... my_grep.s"
-	@echo "... my_shell.o"
-	@echo "... my_shell.i"
-	@echo "... my_shell.s"
 .PHONY : help
 
 

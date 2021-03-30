@@ -82,13 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/myShell0.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/myShell0.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_cp.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_cp.h">
+			<Option target="MyShell"/>
+		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_grep.c">
 			<Option target="MyShell"/>
 		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_grep.h">
-			<Option target="MyShell"/>
-		</Unit>
-		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_shell.c">
 			<Option target="MyShell"/>
 		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/CMakeLists.txt">

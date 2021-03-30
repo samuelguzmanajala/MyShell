@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/samuelguzman/CLionProjects/MyShell/myShell0.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/myShell0.c.o"
+  "/home/samuelguzman/CLionProjects/MyShell/my_cp.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/my_grep.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_grep.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_shell.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_shell.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
