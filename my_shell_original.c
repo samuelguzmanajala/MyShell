@@ -7,7 +7,6 @@
 #include<sys/wait.h>
 #include<readline/readline.h>
 #include<readline/history.h>
-//#include "my_cd.h";
 
 #define MAXCOM 1000 // max number of letters to be supported
 #define MAXLIST 100 // max number of commands to be supported
@@ -59,7 +58,7 @@ void printDir()
 void execArgs(char** parsed)
 {
     // Forking a child
-    int pid = fork();
+    pid_t pid = fork();
 
     if (pid == -1) {
         printf("\nFailed forking child..");
@@ -251,7 +250,7 @@ int main()
     char inputString[MAXCOM], *parsedArgs[MAXLIST];
     char* parsedArgsPiped[MAXLIST];
     int execFlag = 0;
-    //init_shell();
+    init_shell();
 
     while (1) {
         // print shell line
@@ -259,7 +258,6 @@ int main()
         // take input
         if (takeInput(inputString))
             continue;
-
         // process
         execFlag = processString(inputString,
                                  parsedArgs, parsedArgsPiped);
@@ -269,12 +267,11 @@ int main()
         // 2 if it is including a pipe.
 
         // execute
-
         if (execFlag == 1)
             execArgs(parsedArgs);
 
-        //if (execFlag == 2||execFlag==1){};
-            //changeDirectory(, parsedArgsPiped);
+        if (execFlag == 2)
+            execArgsPiped(parsedArgs, parsedArgsPiped);
     }
     return 0;
 }
