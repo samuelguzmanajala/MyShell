@@ -13,8 +13,12 @@
 #include <errno.h>
 #include <sys/wait.h>
 #include "my_grep.h"
-#include "my_cp.h"
 #include "my_help.h"
+#include "my_mv.h"
+#include "my_cat.h"
+#include "my_ls.h"
+#include "my_man.h"
+#include "my_cp2.h"
 
 #define error(a) {perror(a); exit(1);};
 #define MAXLINE 200
@@ -76,16 +80,26 @@ void execute2(int numberOfArgs,char **parsed){
         executeGrep(numberOfArgs, parsed);
     }
     if (strcmp(parsed[0],"cp")==0){
-        ms_cp(parsed);
-        printf("pegar comando copy");
+
+        myCp(numberOfArgs,parsed);
+        //printf("pegar comando copy");
     }
     if (strcmp(parsed[0],"help")==0){
         exHelp(numberOfArgs,parsed);
         printf("pegar comando copy");
     }
     if (strcmp(parsed[0],"mv")==0){
-        ms_mv(parsed);
-        printf("pegar comando copy");
+        myMv(numberOfArgs,parsed);
+        //printf("pegar comando copy");
+    }
+    if(strcmp(parsed[0],"cat")==0){
+        myCat(numberOfArgs,parsed);
+    }
+    if(strcmp(parsed[0],"ls")==0){
+        myLs(numberOfArgs,parsed);
+    }
+    if(strcmp(parsed[0],"man")==0){
+        myMan(numberOfArgs,parsed);
     }
 
 }
@@ -114,7 +128,6 @@ int execute(int argc, char *argv[])
     } else {
         // waiting for child to terminate
         wait(NULL);
-
     }
     //...
 }

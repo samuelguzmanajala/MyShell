@@ -3,16 +3,35 @@
 
 CMakeFiles/MyShell.dir/myShell0.c.o: ../myShell0.c
 CMakeFiles/MyShell.dir/myShell0.c.o: ../myShell0.h
-CMakeFiles/MyShell.dir/myShell0.c.o: ../my_cp.h
+CMakeFiles/MyShell.dir/myShell0.c.o: ../my_cat.h
+CMakeFiles/MyShell.dir/myShell0.c.o: ../my_cp2.h
 CMakeFiles/MyShell.dir/myShell0.c.o: ../my_grep.h
 CMakeFiles/MyShell.dir/myShell0.c.o: ../my_help.h
+CMakeFiles/MyShell.dir/myShell0.c.o: ../my_ls.h
+CMakeFiles/MyShell.dir/myShell0.c.o: ../my_man.h
+CMakeFiles/MyShell.dir/myShell0.c.o: ../my_mv.h
+
+CMakeFiles/MyShell.dir/my_cat.c.o: ../my_cat.c
+CMakeFiles/MyShell.dir/my_cat.c.o: ../my_cat.h
 
 CMakeFiles/MyShell.dir/my_cp.c.o: ../my_cp.c
 CMakeFiles/MyShell.dir/my_cp.c.o: ../my_cp.h
+
+CMakeFiles/MyShell.dir/my_cp2.c.o: ../my_cp2.c
+CMakeFiles/MyShell.dir/my_cp2.c.o: ../my_cp2.h
 
 CMakeFiles/MyShell.dir/my_grep.c.o: ../my_grep.c
 CMakeFiles/MyShell.dir/my_grep.c.o: ../my_grep.h
 
 CMakeFiles/MyShell.dir/my_help.c.o: ../my_help.c
 CMakeFiles/MyShell.dir/my_help.c.o: ../my_help.h
+
+CMakeFiles/MyShell.dir/my_ls.c.o: ../my_ls.c
+CMakeFiles/MyShell.dir/my_ls.c.o: ../my_ls.h
+
+CMakeFiles/MyShell.dir/my_man.c.o: ../my_man.c
+CMakeFiles/MyShell.dir/my_man.c.o: ../my_man.h
+
+CMakeFiles/MyShell.dir/my_mv.c.o: ../my_mv.c
+CMakeFiles/MyShell.dir/my_mv.c.o: ../my_mv.h
 

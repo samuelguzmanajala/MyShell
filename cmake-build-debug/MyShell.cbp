@@ -88,10 +88,22 @@
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/myShell0.h">
 			<Option target="MyShell"/>
 		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_cat.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_cat.h">
+			<Option target="MyShell"/>
+		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_cp.c">
 			<Option target="MyShell"/>
 		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_cp.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_cp2.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_cp2.h">
 			<Option target="MyShell"/>
 		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_grep.c">
@@ -104,6 +116,24 @@
 			<Option target="MyShell"/>
 		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_help.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_ls.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_ls.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_man.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_man.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_mv.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/my_mv.h">
 			<Option target="MyShell"/>
 		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/CMakeLists.txt">

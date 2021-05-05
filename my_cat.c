@@ -1,3 +1,8 @@
+//
+// Created by samuelguzman on 3/5/21.
+//
+
+#include "my_cat.h"
 //Our own version of the command cat.
 
 
@@ -13,45 +18,50 @@
 #include <fcntl.h>
 #define MAXSIZE 500
 
-main(int argc, char* argv[])
+myCat(int argc, char* argv[])
 {
 
-   int fd;
-   char usa[] = "USAGE: cat [file_name] OR  cat [].";
-   char err[] = "ERROR: couldn't open the file.";
-   char fil[500];
-   char std[500];
-   size_t n1 = sizeof(err);
-   size_t n2;
-   size_t n3;
-   
+    int fd, o, p;
+    char usa[] = "USAGE: my_cat [file_name] OR  my_cat [].\n";
+    char err[] = "ERROR: couldn't open the file.\n";
+    char fil[MAXSIZE];
+    char std[MAXSIZE];
+    size_t n1 = sizeof(err);;
+    size_t n2;
 
 
-   if (argc != 2 && argc != 1) {
-      write(1, usa, n1);
-      exit(1);
-   }
 
-   else
-   		if(argc == 2)
-   		{
-   			if ((fd = open(argv[1], O_RDWR)) == -1) 
-   			{
-      		write(1, err, n1);
-     		exit(1);
-     		}
+    //Handling the valid amount of parameters
+    if (argc != 2 && argc != 1) {
+        write(1, usa, n1);
+        exit(1);
+    }
 
-     		read(fd, *fil, MAXSIZE);
-     		n2 = sizeof(fil);
-     		write(1, fil, n2);
-     		exit(1);
-   		}
+    else
+    {
+        //Handling of the command when there's 0 parameters
+        if(argc == 1)
+        {
+            o = read(0, std, MAXSIZE);
+            write(1, std, o);
+            exit(1);
+        }
 
-   		else
-   			read(0, *std, MAXSIZE);
-   			n3 = sizeof(std);
-   			write(1, std, n3);
-   			exit(1);
+        if(argc == 2)
+        {
+            //Handling of the command when there's 1 parameter
+            if ((fd = open(argv[1], O_RDWR)) == -1)
+            {
+                write(1, err, n1);
+                exit(1);
+            }
 
-   		
+            p = read(fd, fil, MAXSIZE);
+            write(1, fil, p);
+            exit(1);
+        }
+    }
+
+
+
 }

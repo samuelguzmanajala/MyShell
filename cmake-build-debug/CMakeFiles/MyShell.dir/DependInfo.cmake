@@ -5,9 +5,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/samuelguzman/CLionProjects/MyShell/myShell0.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/myShell0.c.o"
+  "/home/samuelguzman/CLionProjects/MyShell/my_cat.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cat.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/my_cp.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp.c.o"
+  "/home/samuelguzman/CLionProjects/MyShell/my_cp2.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp2.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/my_grep.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_grep.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/my_help.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_help.c.o"
+  "/home/samuelguzman/CLionProjects/MyShell/my_ls.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_ls.c.o"
+  "/home/samuelguzman/CLionProjects/MyShell/my_man.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_man.c.o"
+  "/home/samuelguzman/CLionProjects/MyShell/my_mv.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_mv.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

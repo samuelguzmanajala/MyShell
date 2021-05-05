@@ -170,6 +170,33 @@ myShell0.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/myShell0.c.s
 .PHONY : myShell0.c.s
 
+my_cat.o: my_cat.c.o
+
+.PHONY : my_cat.o
+
+# target to build an object file
+my_cat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cat.c.o
+.PHONY : my_cat.c.o
+
+my_cat.i: my_cat.c.i
+
+.PHONY : my_cat.i
+
+# target to preprocess a source file
+my_cat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cat.c.i
+.PHONY : my_cat.c.i
+
+my_cat.s: my_cat.c.s
+
+.PHONY : my_cat.s
+
+# target to generate assembly for a file
+my_cat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cat.c.s
+.PHONY : my_cat.c.s
+
 my_cp.o: my_cp.c.o
 
 .PHONY : my_cp.o
@@ -196,6 +223,33 @@ my_cp.s: my_cp.c.s
 my_cp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cp.c.s
 .PHONY : my_cp.c.s
+
+my_cp2.o: my_cp2.c.o
+
+.PHONY : my_cp2.o
+
+# target to build an object file
+my_cp2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cp2.c.o
+.PHONY : my_cp2.c.o
+
+my_cp2.i: my_cp2.c.i
+
+.PHONY : my_cp2.i
+
+# target to preprocess a source file
+my_cp2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cp2.c.i
+.PHONY : my_cp2.c.i
+
+my_cp2.s: my_cp2.c.s
+
+.PHONY : my_cp2.s
+
+# target to generate assembly for a file
+my_cp2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_cp2.c.s
+.PHONY : my_cp2.c.s
 
 my_grep.o: my_grep.c.o
 
@@ -251,6 +305,87 @@ my_help.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_help.c.s
 .PHONY : my_help.c.s
 
+my_ls.o: my_ls.c.o
+
+.PHONY : my_ls.o
+
+# target to build an object file
+my_ls.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_ls.c.o
+.PHONY : my_ls.c.o
+
+my_ls.i: my_ls.c.i
+
+.PHONY : my_ls.i
+
+# target to preprocess a source file
+my_ls.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_ls.c.i
+.PHONY : my_ls.c.i
+
+my_ls.s: my_ls.c.s
+
+.PHONY : my_ls.s
+
+# target to generate assembly for a file
+my_ls.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_ls.c.s
+.PHONY : my_ls.c.s
+
+my_man.o: my_man.c.o
+
+.PHONY : my_man.o
+
+# target to build an object file
+my_man.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_man.c.o
+.PHONY : my_man.c.o
+
+my_man.i: my_man.c.i
+
+.PHONY : my_man.i
+
+# target to preprocess a source file
+my_man.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_man.c.i
+.PHONY : my_man.c.i
+
+my_man.s: my_man.c.s
+
+.PHONY : my_man.s
+
+# target to generate assembly for a file
+my_man.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_man.c.s
+.PHONY : my_man.c.s
+
+my_mv.o: my_mv.c.o
+
+.PHONY : my_mv.o
+
+# target to build an object file
+my_mv.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_mv.c.o
+.PHONY : my_mv.c.o
+
+my_mv.i: my_mv.c.i
+
+.PHONY : my_mv.i
+
+# target to preprocess a source file
+my_mv.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_mv.c.i
+.PHONY : my_mv.c.i
+
+my_mv.s: my_mv.c.s
+
+.PHONY : my_mv.s
+
+# target to generate assembly for a file
+my_mv.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/my_mv.c.s
+.PHONY : my_mv.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -263,15 +398,30 @@ help:
 	@echo "... myShell0.o"
 	@echo "... myShell0.i"
 	@echo "... myShell0.s"
+	@echo "... my_cat.o"
+	@echo "... my_cat.i"
+	@echo "... my_cat.s"
 	@echo "... my_cp.o"
 	@echo "... my_cp.i"
 	@echo "... my_cp.s"
+	@echo "... my_cp2.o"
+	@echo "... my_cp2.i"
+	@echo "... my_cp2.s"
 	@echo "... my_grep.o"
 	@echo "... my_grep.i"
 	@echo "... my_grep.s"
 	@echo "... my_help.o"
 	@echo "... my_help.i"
 	@echo "... my_help.s"
+	@echo "... my_ls.o"
+	@echo "... my_ls.i"
+	@echo "... my_ls.s"
+	@echo "... my_man.o"
+	@echo "... my_man.i"
+	@echo "... my_man.s"
+	@echo "... my_mv.o"
+	@echo "... my_mv.i"
+	@echo "... my_mv.s"
 .PHONY : help
 
 

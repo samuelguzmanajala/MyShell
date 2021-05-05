@@ -6,47 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/samuelguzman/CLionProjects/MyShell/myShell0.c
-myShell0.h
-/home/samuelguzman/CLionProjects/MyShell/myShell0.h
-stdio.h
--
-stdlib.h
--
+/home/samuelguzman/CLionProjects/MyShell/my_man.c
+my_man.h
+/home/samuelguzman/CLionProjects/MyShell/my_man.h
 unistd.h
 -
-string.h
+sys/types.h
 -
-errno.h
+sys/stat.h
 -
-sys/wait.h
--
-my_grep.h
-/home/samuelguzman/CLionProjects/MyShell/my_grep.h
-my_cp.h
-/home/samuelguzman/CLionProjects/MyShell/my_cp.h
-my_help.h
-/home/samuelguzman/CLionProjects/MyShell/my_help.h
-
-/home/samuelguzman/CLionProjects/MyShell/myShell0.h
-
-/home/samuelguzman/CLionProjects/MyShell/my_cp.c
 fcntl.h
 -
-unistd.h
+stdlib.h
 -
 stdio.h
 -
 string.h
 -
-stdlib.h
--
-my_cp.h
-/home/samuelguzman/CLionProjects/MyShell/my_cp.h
 
-/home/samuelguzman/CLionProjects/MyShell/my_cp.h
-
-/home/samuelguzman/CLionProjects/MyShell/my_grep.h
-
-/home/samuelguzman/CLionProjects/MyShell/my_help.h
+/home/samuelguzman/CLionProjects/MyShell/my_man.h
 

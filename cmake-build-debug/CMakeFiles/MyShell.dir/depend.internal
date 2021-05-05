@@ -4,15 +4,34 @@
 CMakeFiles/MyShell.dir/myShell0.c.o
  /home/samuelguzman/CLionProjects/MyShell/myShell0.c
  /home/samuelguzman/CLionProjects/MyShell/myShell0.h
- /home/samuelguzman/CLionProjects/MyShell/my_cp.h
+ /home/samuelguzman/CLionProjects/MyShell/my_cat.h
+ /home/samuelguzman/CLionProjects/MyShell/my_cp2.h
  /home/samuelguzman/CLionProjects/MyShell/my_grep.h
  /home/samuelguzman/CLionProjects/MyShell/my_help.h
+ /home/samuelguzman/CLionProjects/MyShell/my_ls.h
+ /home/samuelguzman/CLionProjects/MyShell/my_man.h
+ /home/samuelguzman/CLionProjects/MyShell/my_mv.h
+CMakeFiles/MyShell.dir/my_cat.c.o
+ /home/samuelguzman/CLionProjects/MyShell/my_cat.c
+ /home/samuelguzman/CLionProjects/MyShell/my_cat.h
 CMakeFiles/MyShell.dir/my_cp.c.o
  /home/samuelguzman/CLionProjects/MyShell/my_cp.c
  /home/samuelguzman/CLionProjects/MyShell/my_cp.h
+CMakeFiles/MyShell.dir/my_cp2.c.o
+ /home/samuelguzman/CLionProjects/MyShell/my_cp2.c
+ /home/samuelguzman/CLionProjects/MyShell/my_cp2.h
 CMakeFiles/MyShell.dir/my_grep.c.o
  /home/samuelguzman/CLionProjects/MyShell/my_grep.c
  /home/samuelguzman/CLionProjects/MyShell/my_grep.h
 CMakeFiles/MyShell.dir/my_help.c.o
  /home/samuelguzman/CLionProjects/MyShell/my_help.c
  /home/samuelguzman/CLionProjects/MyShell/my_help.h
+CMakeFiles/MyShell.dir/my_ls.c.o
+ /home/samuelguzman/CLionProjects/MyShell/my_ls.c
+ /home/samuelguzman/CLionProjects/MyShell/my_ls.h
+CMakeFiles/MyShell.dir/my_man.c.o
+ /home/samuelguzman/CLionProjects/MyShell/my_man.c
+ /home/samuelguzman/CLionProjects/MyShell/my_man.h
+CMakeFiles/MyShell.dir/my_mv.c.o
+ /home/samuelguzman/CLionProjects/MyShell/my_mv.c
+ /home/samuelguzman/CLionProjects/MyShell/my_mv.h
