@@ -1,5 +1,5 @@
 //
-// Created by samuelguzman on 30/3/21.
+// Created by samuelguzman on 7/5/21.
 //
 
 #include "myShell0.h"
@@ -12,6 +12,7 @@
 #include <string.h>
 #include <errno.h>
 #include <sys/wait.h>
+#include <pwd.h>
 #include "my_grep.h"
 #include "my_help.h"
 #include "my_mv.h"
@@ -19,6 +20,7 @@
 #include "my_ls.h"
 #include "my_man.h"
 #include "my_cp2.h"
+#include "game.h"
 
 #define error(a) {perror(a); exit(1);};
 #define MAXLINE 200
@@ -101,6 +103,11 @@ void execute2(int numberOfArgs,char **parsed){
     if(strcmp(parsed[0],"man")==0){
         myMan(numberOfArgs,parsed);
     }
+    if(strcmp(parsed[0],"pwd")==0){
+        char dir[1000];
+        getcwd(dir, 1000);
+        printf("\ndirectory: %s\n", dir);
+    }
 
 }
 
@@ -108,9 +115,15 @@ int execute(int argc, char *argv[])
 {
     if (strcmp(argv[0], "cd") == 0) {
         chdir(argv[1]);
-        char dir[1000];
-        getcwd(dir, 1000);
-        printf("\nuser: %s\n", dir);
+
+    }
+    if (strcmp(argv[0], "game") == 0) {
+        struct passwd *pw = getpwuid(getuid());
+        const char *dir = pw->pw_dir;
+        strcat(dir,"/CLionProjects/MyShell/Game/street/house");
+        chdir(dir);
+        setup();
+        myGame();
     }
 
     pid_t pid = fork();

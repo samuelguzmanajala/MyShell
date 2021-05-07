@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/samuelguzman/CLionProjects/MyShell/game.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/game.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/myShell0.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/myShell0.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/my_cat.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cat.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/my_cp.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp.c.o"

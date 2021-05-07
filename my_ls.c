@@ -11,8 +11,10 @@
 #include <dirent.h>
 #include <stdio.h>
 #include <sys/stat.h>
+//myls
 
-myLs(int argc, char* argv[]){
+int myLs(int argc, char* argv[]){
+
     if (argc != 2){
         write(1, "USAGE: my_ls [directory].\n", 28);
         exit(1);
@@ -38,6 +40,5 @@ myLs(int argc, char* argv[]){
             }
             exit(1);
         }
-
     }
 }

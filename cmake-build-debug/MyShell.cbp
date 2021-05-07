@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/game.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/game.h">
+			<Option target="MyShell"/>
+		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/myShell0.c">
 			<Option target="MyShell"/>
 		</Unit>
