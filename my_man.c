@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <pwd.h>
 
 int myMan(int argc, char* argv[])
 {
@@ -22,11 +23,12 @@ int myMan(int argc, char* argv[])
         write(2, "Usage: man [COMMAND]\n", 22);
         exit(1);
     }
+    const char *dir="";
+    strcat(dir,"home/samuelguzman/CLionProjects/MyShell/Man/");
 
-
-    strcat(filename, "/home/samuelguzman/CLionProjects/MyShell/Man/"); //Creamos una carpeta en esta direccion y hacemos hay la explicación de cada comando
+    strcat(filename, dir); //Creamos una carpeta en esta direccion y hacemos hay la explicación de cada comando
     strcat(filename, argv[1]);
-
+    printf("&%s",filename);
     fptr = fopen(filename, "r");
     if (fptr == NULL)
     {
@@ -42,5 +44,6 @@ int myMan(int argc, char* argv[])
     }
 
     fclose(fptr);
+
     return 0;
 }

@@ -81,14 +81,14 @@ void execute2(int numberOfArgs,char **parsed){
     if(strcmp(parsed[0], "grep") == 0){
         executeGrep(numberOfArgs, parsed);
     }
-    if (strcmp(parsed[0],"cp")==0){
-
+    if (strcmp(parsed[0], "cp")==0){
+        printf("cpflkdjsk");
         myCp(numberOfArgs,parsed);
         //printf("pegar comando copy");
     }
     if (strcmp(parsed[0],"help")==0){
         exHelp(numberOfArgs,parsed);
-        printf("pegar comando copy");
+        //printf("pegar comando copy");
     }
     if (strcmp(parsed[0],"mv")==0){
         myMv(numberOfArgs,parsed);
@@ -103,24 +103,26 @@ void execute2(int numberOfArgs,char **parsed){
     if(strcmp(parsed[0],"man")==0){
         myMan(numberOfArgs,parsed);
     }
-    if(strcmp(parsed[0],"pwd")==0){
-        char dir[1000];
-        getcwd(dir, 1000);
-        printf("\ndirectory: %s\n", dir);
-    }
-
 }
 
 int execute(int argc, char *argv[])
 {
     if (strcmp(argv[0], "cd") == 0) {
-        chdir(argv[1]);
+
+        if(argc<2){
+            printf("\nyou need more parameters\n");
+        }else{
+            int x=chdir(argv[1]);
+            if(x==-1){
+                printf("\ndirectory don't exist\n");
+            }
+        }
 
     }
     if (strcmp(argv[0], "game") == 0) {
         struct passwd *pw = getpwuid(getuid());
         const char *dir = pw->pw_dir;
-        strcat(dir,"/CLionProjects/MyShell/Game/street/house");
+        strcat(dir,"/CLionProjects/MyShell/Game");
         chdir(dir);
         setup();
         myGame();
@@ -135,9 +137,18 @@ int execute(int argc, char *argv[])
         printf("\nFailed forking child..");
 
     } else if (pid == 0) {
-
-        execute2(argc,argv);
-        exit(0);
+        if(argc<2 && strcmp(argv[0],"pwd")!=0){
+            printf("\nfew arguments\n");
+            exit(0);
+        }else if (strcmp(argv[0],"pwd")==0){
+            char dir[1000];
+            getcwd(dir, 1000);
+            printf("\ndirectory: %s\n", dir);
+            exit(0);
+        }else{
+            execute2(argc,argv);
+            exit(0);
+        }
     } else {
         // waiting for child to terminate
         wait(NULL);
