@@ -1,6 +1,19 @@
 //
 // Created by samuelguzman on 6/5/21.
 //
+//COLORS OF STORY SCRIPT
+    //COMMANDS = RED -----  EJEMPLO--> printf("\033[0;31m"); PONER COLOR
+    //printf("Hello\n"); MENSAJE A PRINTEAR
+    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+    //PLAYER = PURPLE ----- EJEMPLO--> printf("\033[0;35m"); PONER COLOR
+    // printf("Hello\n"); MENSAJE A PRINTEAR
+    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+    //NARRATOR = CYAN ----- EJEMPLO--> printf("\033[0;36m"); PONER COLOR
+    // printf("Hello\n"); MENSAJE A PRINTEAR
+    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+    //REST OF CHARACTERS = GREEN ----- EJEMPLO--> printf("\033[0;32m"); PONER COLOR
+    // printf("Hello\n"); MENSAJE A PRINTEAR
+    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
 
 #include <stdio.h>
 #include <unistd.h>
@@ -12,7 +25,7 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 #include <fcntl.h>
-#include <wait.h>
+#include <sys/wait.h>
 #include <stdbool.h>
 #include <pwd.h>
 

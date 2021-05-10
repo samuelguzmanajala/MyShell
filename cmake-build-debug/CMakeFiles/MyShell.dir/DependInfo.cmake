@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/samuelguzman/CLionProjects/MyShell/game.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/game.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/myShell0.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/myShell0.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_cat.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cat.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_cp.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_cp2.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp2.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_grep.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_grep.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_help.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_help.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_ls.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_ls.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_man.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_man.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/my_mv.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_mv.c.o"
+  "/Users/nesket/CLionProjects/MyShell/game.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/game.c.o"
+  "/Users/nesket/CLionProjects/MyShell/myShell0.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/myShell0.c.o"
+  "/Users/nesket/CLionProjects/MyShell/my_cat.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cat.c.o"
+  "/Users/nesket/CLionProjects/MyShell/my_cp.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp.c.o"
+  "/Users/nesket/CLionProjects/MyShell/my_cp2.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_cp2.c.o"
+  "/Users/nesket/CLionProjects/MyShell/my_grep.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_grep.c.o"
+  "/Users/nesket/CLionProjects/MyShell/my_help.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_help.c.o"
+  "/Users/nesket/CLionProjects/MyShell/my_ls.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_ls.c.o"
+  "/Users/nesket/CLionProjects/MyShell/my_man.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_man.c.o"
+  "/Users/nesket/CLionProjects/MyShell/my_mv.c" "/Users/nesket/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/my_mv.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
