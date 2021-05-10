@@ -1,6 +1,19 @@
 //
 // Created by samuelguzman on 6/5/21.
 //
+//COLORS OF STORY SCRIPT
+    //COMMANDS = RED -----  EJEMPLO--> printf("\033[0;31m"); PONER COLOR
+    //printf("Hello\n"); MENSAJE A PRINTEAR
+    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+    //PLAYER = PURPLE ----- EJEMPLO--> printf("\033[0;35m"); PONER COLOR
+    // printf("Hello\n"); MENSAJE A PRINTEAR
+    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+    //NARRATOR = CYAN ----- EJEMPLO--> printf("\033[0;36m"); PONER COLOR
+    // printf("Hello\n"); MENSAJE A PRINTEAR
+    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+    //REST OF CHARACTERS = GREEN ----- EJEMPLO--> printf("\033[0;32m"); PONER COLOR
+    // printf("Hello\n"); MENSAJE A PRINTEAR
+    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
 
 #include <stdio.h>
 #include <unistd.h>
@@ -12,7 +25,7 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 #include <fcntl.h>
-#include <wait.h>
+#include <sys/wait.h>
 #include <stdbool.h>
 #include <pwd.h>
 
@@ -52,7 +65,7 @@ int myGame (void) {
 
 
 
-
+    printf("\033[0;36m");
     printf("Welcome to the Digital World, in this adventure you will have to learn how to use ten\n"
            "basic commands in order to defeat the ruthless dragon that has been tormenting our\n"
            "town for thousands of years. Do you have what it takes to save our town?\n");
@@ -62,9 +75,11 @@ int myGame (void) {
     printf("\nFirst of all, we need you to identify yourself young hero:\n");
     fgets(name, 100, stdin);
 
+    printf("\033[0;31m");
     printf("use man in order to know the commands that will be used");
 
     sleep(0);
+    printf("\033[0;31m");
     printf("Quick reminder, you can use help whenever you want if you don’t remember how\n"
            "the commands work.\n");
 
@@ -79,12 +94,13 @@ int myGame (void) {
 
     }
 
-
+    printf("\033[0;36m");
     printf("\n*Narrator*: A new day awakes in our hero’s beloved town Mitochondria\n");
-    printf("\nMom: Mijo/a, listen up! %s, I told you to listen to me pinche vago/a! Our\n",name);
-    printf("\ntown is in danger, come take a look outside the window. But be careful, Iberdrola\n");
+    printf("\033[0;32m");
+    printf("\nMom: Mijo/a, listen up! %s, I told you to listen to me pinche vago/a! Our\n");
     printf("\ntown is in danger, come take a look outside the window. But be careful, Iberdrola\n");
     printf("\ndisconnected our energy supply!\n");
+    printf("\033[0;31m");
     printf("\n*Make use of the flashlight with the command ls to get close to mom*\n");
 
     loop=true;
@@ -98,8 +114,9 @@ int myGame (void) {
         }
     //}
 
-
+    printf("\033[0;36m");
     printf("\nThe town is entirely covered by ashes which reduces visibility indoors and outdoors\n");
+    printf("\033[0;31m");
     printf("\nMake use of the command ls in order to find the window\n");
     loop=true;
 
@@ -126,14 +143,19 @@ int myGame (void) {
         }
     }
 
+    printf("\033[0;36m");
     printf("\n*Our hero takes a look outside the window, a massive dragon is attacking the town\n"
            "spitting burning hot fire from its mouth*\n");
+    printf("\033[0;32m");
     printf("\nMom screams dramatically: Oh nooooo, uncle Yayo el Muyayo’s house!\n");
+    printf("\033[0;36m");
     printf("\n*While our hero’s mom is desperately screaming, uncle Yayo el Muyayo seems not\n"
            "to hear it and is peacefully watering his lovely sunflowers*\n");
     printf("\n*Both mom and son/daughter look at each other with a distressed look in their faces*\n");
+    printf("\033[0;32m");
     printf("Mom: Stop looking at me, move your culo and take grandpa’s secret chest, I think it’s "
            "time for you to make the Ramirez family proud!");
+    printf("\033[0;31m");
     printf("\n*Make use of the command cd in order to enter the directory stairs and exit the "
            "directory window*\n");
     loop=true;
@@ -165,12 +187,12 @@ int myGame (void) {
             loop=false;
         }
     }
-    printf("\n*Narrator*: Oh no, it looks like grandpa didn’t sort out his room, it’s a mess full of chests!!\n");
+    printf("\n*Narrator*: Oh no, it looks like grandpa didn't sort out his room, it’s a mess full of chests!!\n");
     printf("\n%s thinks to himself: What mom said keeps resonating in my head.\n",name);
     printf("\nMom’s voice inside %s's head: Grandpa Ricardo’s room is dark, you’ll\n"
            "have to light it up somehow. But remember, grandpa hates it when people sniff\n"
            "around his stuff.\n",name);
-    printf("\n*Make use of the command ls -l in order to see what’s in the room*\n");
+    printf("\n*Make use of the command ls in order to see what’s in the room*\n");
     if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
         execs(argc, args);
     }
@@ -216,19 +238,31 @@ int myGame (void) {
             loop=false;
         }
     }
-    printf("\n*Our hero successfully got out of the house and is outside in the middle of the street*\n"
-           "PlayerName thinks to himself/herself: Oh shit, the sword is full of spiderwebs, I gotta\n"
-           "clean it up!\n");
+    printf("\033[0;36m");
+    printf("\n*Our hero successfully got out of the house and is outside in the middle of the street*\n");
+    printf("\033[0;35m");
+    printf("PlayerName thinks to himself/herself: Oh shit, the sword is full of spiderwebs, I gotta clean it up!\n");
+    printf("\033[0;31m"); //Set the text to the color red (Commands = RED)
     printf("*Make use of the command rm in order to clean up the sword*");
+    printf("\033[0m"); //Resets the text to default color
     loop=true;
     while (loop){
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
             execs(argc, args);
         }
-        if(strcmp(args[0],"rm")==0 && strcmp(args[1],"chest")==0){
+        if(strcmp(args[0],"rm")==0 && strcmp(args[1],"spiderwebs")==0){
             loop=false;
         }
     }
+    /////////////////////////////////////////// HISTORIA MAT A PARTIR DE AQUI (ARRIBA REVISAR Y APLICAR COLORES)
+    printf("\033[0;35m");
+    printf("\nPlayerName says confidently: Oh yeah, now I’m ready to kick some ass!\n");
+    printf("\033[0;36m");
+    printf("\nNarrator*: Our naive hero thought that he had everything under control, but an uncertain destiny awaits him/her.\n");
+    printf("\nThe ruthless dragon flies over the Ain’tNobodyGotTimeForThat street where our brave hero is and knocks down one of the main towers of the town’s cathedral, unfortunately knocking out our hero with some rocks that fell off the towers.*\n");
+    printf("\n*Our brave hero lies unconscious on the ground*\n");
+    printf("\n *Eventually, our brave hero opens up his/her eyes while a bit confused and disoriented*\n");
+    printf("\033[0m"); //Resets the text to default color
 
 
 }
