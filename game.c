@@ -135,6 +135,9 @@ int myGame (void) {
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
             execute(argc, args);
         }
+        if(strcmp(args[0],"cd window") && strcmp(args[1],".")==0){
+            loop=false;
+        }
         char dir[1000];
         getcwd(dir, 1000);
         struct passwd *pw = getpwuid(getuid());
