@@ -13,20 +13,21 @@
 #include <errno.h>
 #include <sys/wait.h>
 #include <pwd.h>
-#include "my_grep.h"
-#include "my_help.h"
-#include "my_mv.h"
-#include "my_cat.h"
-#include "my_ls.h"
-#include "my_man.h"
-#include "my_cp2.h"
-#include "game.h"
+#include "commandsH/my_grep.h"
+#include "commandsH/my_help.h"
+#include "commandsH/my_mv.h"
+#include "commandsH/my_cat.h"
+#include "commandsH/my_ls.h"
+#include "commandsH/my_man.h"
+#include "commandsH/my_cp2.h"
+#include "commandsH/game.h"
+#include "commandsH/test.h"
 
 #define error(a) {perror(a); exit(1);};
 #define MAXLINE 200
 #define MAXARGS 20
 
-/////////// reading commands:
+/////////// reading commandsC:
 
 int read_args(int* argcp, char* args[], int max, int* eofp)
 {
@@ -82,8 +83,9 @@ void execute2(int numberOfArgs,char **parsed){
         executeGrep(numberOfArgs, parsed);
     }
     if (strcmp(parsed[0], "cp")==0){
-        printf("cpflkdjsk");
+        printf("Ha usado el comando cp\n");
         myCp(numberOfArgs,parsed);
+
         //printf("pegar comando copy");
     }
     if (strcmp(parsed[0],"help")==0){
@@ -99,6 +101,9 @@ void execute2(int numberOfArgs,char **parsed){
     }
     if(strcmp(parsed[0],"ls")==0){
         myLs(numberOfArgs,parsed);
+    }
+    if(strcmp(parsed[0],"man")==0){
+        myMan(numberOfArgs,parsed);
     }
     if(strcmp(parsed[0],"man")==0){
         myMan(numberOfArgs,parsed);
@@ -122,10 +127,16 @@ int execute(int argc, char *argv[])
     if (strcmp(argv[0], "game") == 0) {
         struct passwd *pw = getpwuid(getuid());
         const char *dir = pw->pw_dir;
-        strcat(dir,"/CLionProjects/MyShell/Game");
         chdir(dir);
         setup();
         myGame();
+    }
+    if (strcmp(argv[0], "test") == 0) {
+        struct passwd *pw = getpwuid(getuid());
+        const char *dir = pw->pw_dir;
+        chdir(dir);
+        setup();
+        myTest();
     }
 
     pid_t pid = fork();
@@ -137,7 +148,7 @@ int execute(int argc, char *argv[])
         printf("\nFailed forking child..");
 
     } else if (pid == 0) {
-        if(argc<2 && strcmp(argv[0],"pwd")!=0){
+        if(argc<2 && strcmp(argv[0],"pwd")!=0 && strcmp(argv[0],"bag")!=0){
             printf("\nfew arguments\n");
             exit(0);
         }else if (strcmp(argv[0],"pwd")==0){
@@ -145,7 +156,36 @@ int execute(int argc, char *argv[])
             getcwd(dir, 1000);
             printf("\ndirectory: %s\n", dir);
             exit(0);
-        }else{
+        }else if(strcmp(argv[0],"bag")==0){
+            char *buffer=malloc(sizeof(char) * 1024);
+            struct passwd *pw = getpwuid(getuid());
+            const char *homedir = pw->pw_dir;
+            strcat(homedir,"/CLionProjects/MyShell/Game/DigitalWorld/.hero'sBag");
+            const char *comm="cat ";
+
+
+            //malloc(buffer);
+
+            strcat(strcpy(buffer, comm), homedir);
+            //printf("%s\n", buffer);
+
+
+            pid_t pid = fork();
+            if(pid==-1){
+                printf("");
+            }else if(pid==0){
+                int i;
+                for (i=0; i<10; i++) {  /* to show every argument */
+                    if ((argv[i]= strtok(buffer, " \t\n")) == (char*)NULL) break;
+                    buffer= NULL;
+                }
+
+                myCat(2,argv);
+
+            }
+            exit(0);
+        }
+        else{
             execute2(argc,argv);
             exit(0);
         }
