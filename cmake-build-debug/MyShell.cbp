@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MyShell"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MyShell">
+				<Option output="/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/MyShell" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 MyShell"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MyShell/fast">
+				<Option output="/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/MyShell" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 MyShell/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/game.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_cat.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp2.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_grep.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_help.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_ls.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_man.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_mv.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/test.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/game.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_cat.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp2.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_grep.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_help.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_ls.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_man.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_mv.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/test.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/myShell0.c">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/myShell0.h">
+			<Option target="MyShell"/>
+		</Unit>
+		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -36,7 +36,8 @@
 #define BUFFER_SIZE 1000
 
 char name[20];
-
+struct passwd *pw ;
+const char *dir ;
 
 void replaceAllString(char *buf, const char *orig, const char *replace)
 {
@@ -96,10 +97,6 @@ int myGame (void) {
     char *args[MAXARGS];
     char str[100];
     bool loop=true;
-
-
-
-
 
     printf("\033[0;36m");
     printf("\nWelcome to the Digital World, in this adventure you will have to learn how to use ten\n"
@@ -164,7 +161,10 @@ int myGame (void) {
             loop=false;
         }
     }
-
+    pw = getpwuid(getuid());
+    dir = pw->pw_dir;
+    strcat(dir,"/CLionProjects/MyShell/Game/DigitalWorld/Mitocondria/MainStreet/Hero'sHouse/Stairs/FirstFloor/Window");
+    chmod(dir,0700);
 
     printf("\033[0;31m");
     printf("\n*Make use of the command cd in order to enter the directory window*\n");
@@ -202,7 +202,14 @@ int myGame (void) {
     printf("\033[0;31m");
     printf("\n*Make use of the command cd in order to enter the directory stairs and exit the directory window*\n");
     printf("\033[0m");
+
+    pw = getpwuid(getuid());
+    dir = pw->pw_dir;
+    strcat(dir,"/CLionProjects/MyShell/Game/DigitalWorld/Mitocondria/MainStreet/Hero'sHouse/Stairs");
+    chmod(dir,0700);
     loop=true;
+
+
     while (loop){
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
             execute(argc, args);
@@ -219,6 +226,13 @@ int myGame (void) {
     printf("\033[0;36m");
     printf("\n*Our young hero goes upstairs to the second floor*\n");
     printf("\033[0m");
+
+
+    pw = getpwuid(getuid());
+    dir = pw->pw_dir;
+    strcat(dir,"/CLionProjects/MyShell/Game/DigitalWorld/Mitocondria/MainStreet/Hero'sHouse/Stairs/SecondFloor");
+    chmod(dir,0700);
+
     loop=true;
     while (loop){
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
@@ -233,6 +247,7 @@ int myGame (void) {
             loop=false;
         }
     }
+
     printf("\033[0;36m");
     printf("\n*Narrator*: Oh no, it looks like grandpa didn't sort out his room, it’s a mess full of chests!!\n");
     printf("\033[0;35m");
@@ -263,6 +278,7 @@ int myGame (void) {
     printf("\033[0;31m");
     printf("\n*Make use of the command cat in order to see what’s inside without opening it*\n");
     printf("\033[0m");
+
     loop=true;
     while (loop){
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
@@ -375,6 +391,12 @@ int myGame (void) {
     printf("\033[0;31m");
     printf("\n*Make use of the command cd with full path in order to move to the directory MainStreet*\n");
     printf("\033[0m");
+
+    pw = getpwuid(getuid());
+    dir = pw->pw_dir;
+    strcat(dir,"/CLionProjects/MyShell/Game/DigitalWorld/Mitocondria/MainStreet/Hero'sHouse/Stairs/SecondFloor");
+    chmod(dir,0700);
+
     loop=true;
     while (loop){
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
@@ -539,7 +561,6 @@ int myGame (void) {
         }
     }
 
-    //////////AÑADIR CONDICIONES////////
 
     printf("\033[0;35m");
     printf("\nYoung hero: Oh yeah, I remember where he lives now, crystal clear, it’s just going\n"
