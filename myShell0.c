@@ -19,13 +19,15 @@
 #include "commandsH/my_cat.h"
 #include "commandsH/my_ls.h"
 #include "commandsH/my_man.h"
-#include "commandsH/my_cp2.h"
+#include "commandsH/my_cp.h"
 #include "commandsH/game.h"
 #include "commandsH/test.h"
 
 #define error(a) {perror(a); exit(1);};
 #define MAXLINE 200
 #define MAXARGS 20
+int fd[2];//fileDescriptor
+
 
 /////////// reading commandsC:
 
@@ -76,14 +78,16 @@ int read_args(int* argcp, char* args[], int max, int* eofp)
     return 1;
 }
 
+
 ///////////////////////////////////////
 
 void execute2(int numberOfArgs,char **parsed){
+    //pipes();
     if(strcmp(parsed[0], "grep") == 0){
         executeGrep(numberOfArgs, parsed);
     }
     if (strcmp(parsed[0], "cp")==0){
-        printf("Ha usado el comando cp\n");
+        //printf("Ha usado el comando cp\n");
         myCp(numberOfArgs,parsed);
 
         //printf("pegar comando copy");
@@ -98,15 +102,19 @@ void execute2(int numberOfArgs,char **parsed){
     }
     if(strcmp(parsed[0],"cat")==0){
         myCat(numberOfArgs,parsed);
+        execlp("/home/samuelguzman/CLionProjects/MyShell/execs/cat","/home/samuelguzman/CLionProjects/MyShell/execs/cat",parsed);
     }
     if(strcmp(parsed[0],"ls")==0){
         myLs(numberOfArgs,parsed);
+        execlp("/home/samuelguzman/CLionProjects/MyShell/execs/ls","ls",parsed);
     }
     if(strcmp(parsed[0],"man")==0){
         myMan(numberOfArgs,parsed);
     }
     if(strcmp(parsed[0],"man")==0){
         myMan(numberOfArgs,parsed);
+    }if(strcmp(parsed[0],"history")==0){
+        execvp(parsed[0],parsed);
     }
 }
 
@@ -141,14 +149,13 @@ int execute(int argc, char *argv[])
 
     pid_t pid = fork();
 
-    //parseSpace(str, parsed, argc)
 
 
     if (pid == -1) {
         printf("\nFailed forking child..");
 
     } else if (pid == 0) {
-        if(argc<2 && strcmp(argv[0],"pwd")!=0 && strcmp(argv[0],"bag")!=0){
+        if(argc<2 && strcmp(argv[0],"pwd")!=0 && strcmp(argv[0],"bag")!=0 && strcmp(argv[0],"echo")!=0){
             printf("\nfew arguments\n");
             exit(0);
         }else if (strcmp(argv[0],"pwd")==0){
@@ -162,8 +169,6 @@ int execute(int argc, char *argv[])
             const char *homedir = pw->pw_dir;
             strcat(homedir,"/CLionProjects/MyShell/Game/DigitalWorld/.hero'sBag");
             const char *comm="cat ";
-
-
             //malloc(buffer);
 
             strcat(strcpy(buffer, comm), homedir);
@@ -183,6 +188,11 @@ int execute(int argc, char *argv[])
                 myCat(2,argv);
 
             }
+            exit(0);
+        }else if(strcmp(argv[0],"echo")==0){
+            //printf("ha usado el comando history\n");
+            //char* argument_list[] = {"echo", NULL};
+            execvp("echo",argv);
             exit(0);
         }
         else{
@@ -206,7 +216,8 @@ main ()
     while (1) {
         write(0,Prompt, strlen(Prompt));
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
-            execute(argc, args);
+                execute(argc, args);
+
         }
         if (eof) exit(0);
     }

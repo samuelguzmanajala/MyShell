@@ -9,15 +9,15 @@
 
 #define MAXSIZE 500
 
-int getLine(char *pattern, FILE *file){
+int main(char *pattern, FILE *file){
     char archivo[500];
     int line=1;
 
     while(fgets(archivo,500,file) != NULL){
 
         if(strstr(archivo,pattern) != NULL){
-            printf("%s",archivo);
-            //printf("match on the following line: %i\n", line);
+            printf("%s ",pattern);
+            printf("match on the following line: %i\n", line);
             //printf("%s",archivo);
         }
         line++;
@@ -45,7 +45,7 @@ int executeGrep(int argc, char* argv[])
     }
 
     getLine(pattern,file);
-
+    
     return 0;
 
 }

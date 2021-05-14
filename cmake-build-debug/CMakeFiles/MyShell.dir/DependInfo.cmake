@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/samuelguzman/CLionProjects/MyShell/commandsC/game.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/commandsC/game.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/commandsC/my_cat.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/commandsC/my_cat.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/commandsC/my_cp.c.o"
-  "/home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp2.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/commandsC/my_grep.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/commandsC/my_grep.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/commandsC/my_help.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/commandsC/my_help.c.o"
   "/home/samuelguzman/CLionProjects/MyShell/commandsC/my_ls.c" "/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles/MyShell.dir/commandsC/my_ls.c.o"

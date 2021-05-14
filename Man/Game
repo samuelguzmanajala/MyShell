@@ -1,0 +1,68 @@
+Game(1)                     Manual pager utils                     Game(1)
+
+NAME         top
+
+       man - an interface to the system reference manuals
+
+SYNOPSIS         top
+
+       Welcome to the Digital World, in this adventure you will have to learn how to use ten
+       basic commands in order to defeat the ruthless dragon that has been tormenting our
+       town for thousands of years. Do you have what it takes to save our town?
+
+DESCRIPTION         top
+
+      The game is based on an miscelanieus story taht takes places in the Digital world, more concretly
+      in Mitocondria town. You will have to defeat a great dragon and save your uncle from it's fatal death, and so meanwhile
+      you will be learning how to use Unix commands in a very funny way.
+
+EXAMPLES         top
+
+       man ls
+           Display the manual page for the item (program) ls. In game it will be used for seeking doors and rooms
+	   This will allow the user to continue in the story timeline.
+
+       man ls -l
+	   Display the manual page for the item (program) ls.
+           However with option -l the programm will show more especific
+           information such as permisions, links to files, owners name...
+	   More concretly in game will be used to see where the user is able to enter or open chests (permissions).
+
+
+       man man
+           Display the manual page for macro package man
+
+       man help
+           Display the manual page for the command help. This one
+	   is used for knowing how a single command works.
+
+       man cat
+           Display the manual page for the command cat. In this case cat is
+           used to see what is written inside a file without need of entering it
+
+       man pwd
+           Display the manual page for the command pwd. This one is used in orde
+           to print into the standar output the current working directory.
+
+       man cp
+           This command will copy (making use of soft links) the file choosen in the argument line
+	   ¡Be carefull, this command won't copy the file it's selve , it will create a soft link to
+           the file from another choosen memory space, if you delete the original file the copy will be also deleted!
+
+       man grep
+           Display the manual page for command grep. This command will give from the choosen file the number of the line
+	   of the string you are looking for.
+
+       man mv
+           mv is a Unix command used to move or rename files or directories in the file system. The original file is deleted and
+           a new file is created with the same contents, the name may be different or it may be the same. In case it is used in the
+           same path with the file name and another name, only the file name is changed.
+
+       man bag
+	   This is a personal command created for this game, it's used to show what the hero has in his bag at that point of the story,
+	   it will be mandatory to use in same part's. Here is where food or swords are stored.
+
+       man cd
+	   The cd command, also known as chdir (change directory), is a command-line shell command used to change the current working
+           directory on various operating systems. It can be used in shell scripts and batch files. In addition it can be also used to
+           move between streets, houses and  rooms inside the game.

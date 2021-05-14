@@ -2,7 +2,7 @@
 // Created by samuelguzman on 3/5/21.
 //
 
-#include "../commandsH/my_cat.h"
+
 //Our own version of the command cat.
 
 
@@ -15,7 +15,7 @@
 #include <fcntl.h>
 #define MAXSIZE 500
 
-int myCat(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 
     int fd, o, p;

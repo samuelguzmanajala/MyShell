@@ -2,7 +2,6 @@
 // Created by samuelguzman on 3/5/21.
 //
 
-#include "../commandsH/my_ls.h"
 //Falta el modo -l que muestra mas informacion como los permisos
 //my_ls.c
 #include <stdlib.h>
@@ -54,7 +53,7 @@ void getPermissions(struct stat sb, char* permissionString){
 }
 
 
-int myLs(int argc, char* argv[]){
+int main(int argc, char* argv[]){
 
     if (argc < 2){
         write(1, "USAGE: my_ls [directory].\n", 28);

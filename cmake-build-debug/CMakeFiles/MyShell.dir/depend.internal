@@ -5,7 +5,6 @@ CMakeFiles/MyShell.dir/commandsC/game.c.o
  /home/samuelguzman/CLionProjects/MyShell/commandsC/game.c
  /home/samuelguzman/CLionProjects/MyShell/commandsH/game.h
  /home/samuelguzman/CLionProjects/MyShell/commandsH/my_cat.h
- /home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp2.h
  /home/samuelguzman/CLionProjects/MyShell/myShell0.h
 CMakeFiles/MyShell.dir/commandsC/my_cat.c.o
  /home/samuelguzman/CLionProjects/MyShell/commandsC/my_cat.c
@@ -13,9 +12,6 @@ CMakeFiles/MyShell.dir/commandsC/my_cat.c.o
 CMakeFiles/MyShell.dir/commandsC/my_cp.c.o
  /home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp.c
  /home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp.h
-CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o
- /home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp2.c
- /home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp2.h
 CMakeFiles/MyShell.dir/commandsC/my_grep.c.o
  /home/samuelguzman/CLionProjects/MyShell/commandsC/my_grep.c
  /home/samuelguzman/CLionProjects/MyShell/commandsH/my_grep.h
@@ -39,7 +35,7 @@ CMakeFiles/MyShell.dir/commandsC/test.c.o
 CMakeFiles/MyShell.dir/myShell0.c.o
  /home/samuelguzman/CLionProjects/MyShell/commandsH/game.h
  /home/samuelguzman/CLionProjects/MyShell/commandsH/my_cat.h
- /home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp2.h
+ /home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp.h
  /home/samuelguzman/CLionProjects/MyShell/commandsH/my_grep.h
  /home/samuelguzman/CLionProjects/MyShell/commandsH/my_help.h
  /home/samuelguzman/CLionProjects/MyShell/commandsH/my_ls.h

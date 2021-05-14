@@ -129,22 +129,9 @@ CMakeFiles/MyShell.dir/commandsC/my_help.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MyShell.dir/commandsC/my_help.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/samuelguzman/CLionProjects/MyShell/commandsC/my_help.c -o CMakeFiles/MyShell.dir/commandsC/my_help.c.s
 
-CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o: CMakeFiles/MyShell.dir/flags.make
-CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o: ../commandsC/my_cp2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o   -c /home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp2.c
-
-CMakeFiles/MyShell.dir/commandsC/my_cp2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MyShell.dir/commandsC/my_cp2.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp2.c > CMakeFiles/MyShell.dir/commandsC/my_cp2.c.i
-
-CMakeFiles/MyShell.dir/commandsC/my_cp2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MyShell.dir/commandsC/my_cp2.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp2.c -o CMakeFiles/MyShell.dir/commandsC/my_cp2.c.s
-
 CMakeFiles/MyShell.dir/commandsC/my_mv.c.o: CMakeFiles/MyShell.dir/flags.make
 CMakeFiles/MyShell.dir/commandsC/my_mv.c.o: ../commandsC/my_mv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/MyShell.dir/commandsC/my_mv.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/MyShell.dir/commandsC/my_mv.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MyShell.dir/commandsC/my_mv.c.o   -c /home/samuelguzman/CLionProjects/MyShell/commandsC/my_mv.c
 
 CMakeFiles/MyShell.dir/commandsC/my_mv.c.i: cmake_force
@@ -157,7 +144,7 @@ CMakeFiles/MyShell.dir/commandsC/my_mv.c.s: cmake_force
 
 CMakeFiles/MyShell.dir/commandsC/my_cat.c.o: CMakeFiles/MyShell.dir/flags.make
 CMakeFiles/MyShell.dir/commandsC/my_cat.c.o: ../commandsC/my_cat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/MyShell.dir/commandsC/my_cat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/MyShell.dir/commandsC/my_cat.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MyShell.dir/commandsC/my_cat.c.o   -c /home/samuelguzman/CLionProjects/MyShell/commandsC/my_cat.c
 
 CMakeFiles/MyShell.dir/commandsC/my_cat.c.i: cmake_force
@@ -170,7 +157,7 @@ CMakeFiles/MyShell.dir/commandsC/my_cat.c.s: cmake_force
 
 CMakeFiles/MyShell.dir/commandsC/my_ls.c.o: CMakeFiles/MyShell.dir/flags.make
 CMakeFiles/MyShell.dir/commandsC/my_ls.c.o: ../commandsC/my_ls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/MyShell.dir/commandsC/my_ls.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/MyShell.dir/commandsC/my_ls.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MyShell.dir/commandsC/my_ls.c.o   -c /home/samuelguzman/CLionProjects/MyShell/commandsC/my_ls.c
 
 CMakeFiles/MyShell.dir/commandsC/my_ls.c.i: cmake_force
@@ -183,7 +170,7 @@ CMakeFiles/MyShell.dir/commandsC/my_ls.c.s: cmake_force
 
 CMakeFiles/MyShell.dir/commandsC/my_man.c.o: CMakeFiles/MyShell.dir/flags.make
 CMakeFiles/MyShell.dir/commandsC/my_man.c.o: ../commandsC/my_man.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/MyShell.dir/commandsC/my_man.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/MyShell.dir/commandsC/my_man.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MyShell.dir/commandsC/my_man.c.o   -c /home/samuelguzman/CLionProjects/MyShell/commandsC/my_man.c
 
 CMakeFiles/MyShell.dir/commandsC/my_man.c.i: cmake_force
@@ -196,7 +183,7 @@ CMakeFiles/MyShell.dir/commandsC/my_man.c.s: cmake_force
 
 CMakeFiles/MyShell.dir/commandsC/game.c.o: CMakeFiles/MyShell.dir/flags.make
 CMakeFiles/MyShell.dir/commandsC/game.c.o: ../commandsC/game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/MyShell.dir/commandsC/game.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/MyShell.dir/commandsC/game.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MyShell.dir/commandsC/game.c.o   -c /home/samuelguzman/CLionProjects/MyShell/commandsC/game.c
 
 CMakeFiles/MyShell.dir/commandsC/game.c.i: cmake_force
@@ -209,7 +196,7 @@ CMakeFiles/MyShell.dir/commandsC/game.c.s: cmake_force
 
 CMakeFiles/MyShell.dir/commandsC/test.c.o: CMakeFiles/MyShell.dir/flags.make
 CMakeFiles/MyShell.dir/commandsC/test.c.o: ../commandsC/test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/MyShell.dir/commandsC/test.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/MyShell.dir/commandsC/test.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MyShell.dir/commandsC/test.c.o   -c /home/samuelguzman/CLionProjects/MyShell/commandsC/test.c
 
 CMakeFiles/MyShell.dir/commandsC/test.c.i: cmake_force
@@ -226,7 +213,6 @@ MyShell_OBJECTS = \
 "CMakeFiles/MyShell.dir/myShell0.c.o" \
 "CMakeFiles/MyShell.dir/commandsC/my_cp.c.o" \
 "CMakeFiles/MyShell.dir/commandsC/my_help.c.o" \
-"CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o" \
 "CMakeFiles/MyShell.dir/commandsC/my_mv.c.o" \
 "CMakeFiles/MyShell.dir/commandsC/my_cat.c.o" \
 "CMakeFiles/MyShell.dir/commandsC/my_ls.c.o" \
@@ -241,7 +227,6 @@ MyShell: CMakeFiles/MyShell.dir/commandsC/my_grep.c.o
 MyShell: CMakeFiles/MyShell.dir/myShell0.c.o
 MyShell: CMakeFiles/MyShell.dir/commandsC/my_cp.c.o
 MyShell: CMakeFiles/MyShell.dir/commandsC/my_help.c.o
-MyShell: CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o
 MyShell: CMakeFiles/MyShell.dir/commandsC/my_mv.c.o
 MyShell: CMakeFiles/MyShell.dir/commandsC/my_cat.c.o
 MyShell: CMakeFiles/MyShell.dir/commandsC/my_ls.c.o
@@ -250,7 +235,7 @@ MyShell: CMakeFiles/MyShell.dir/commandsC/game.c.o
 MyShell: CMakeFiles/MyShell.dir/commandsC/test.c.o
 MyShell: CMakeFiles/MyShell.dir/build.make
 MyShell: CMakeFiles/MyShell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable MyShell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/samuelguzman/CLionProjects/MyShell/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable MyShell"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyShell.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

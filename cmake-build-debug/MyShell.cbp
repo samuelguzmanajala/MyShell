@@ -85,9 +85,6 @@
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp.c">
 			<Option target="MyShell"/>
 		</Unit>
-		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_cp2.c">
-			<Option target="MyShell"/>
-		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsC/my_grep.c">
 			<Option target="MyShell"/>
 		</Unit>
@@ -113,9 +110,6 @@
 			<Option target="MyShell"/>
 		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp.h">
-			<Option target="MyShell"/>
-		</Unit>
-		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_cp2.h">
 			<Option target="MyShell"/>
 		</Unit>
 		<Unit filename="/home/samuelguzman/CLionProjects/MyShell/commandsH/my_grep.h">

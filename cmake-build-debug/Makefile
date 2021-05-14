@@ -224,33 +224,6 @@ commandsC/my_cp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/commandsC/my_cp.c.s
 .PHONY : commandsC/my_cp.c.s
 
-commandsC/my_cp2.o: commandsC/my_cp2.c.o
-
-.PHONY : commandsC/my_cp2.o
-
-# target to build an object file
-commandsC/my_cp2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o
-.PHONY : commandsC/my_cp2.c.o
-
-commandsC/my_cp2.i: commandsC/my_cp2.c.i
-
-.PHONY : commandsC/my_cp2.i
-
-# target to preprocess a source file
-commandsC/my_cp2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/commandsC/my_cp2.c.i
-.PHONY : commandsC/my_cp2.c.i
-
-commandsC/my_cp2.s: commandsC/my_cp2.c.s
-
-.PHONY : commandsC/my_cp2.s
-
-# target to generate assembly for a file
-commandsC/my_cp2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyShell.dir/build.make CMakeFiles/MyShell.dir/commandsC/my_cp2.c.s
-.PHONY : commandsC/my_cp2.c.s
-
 commandsC/my_grep.o: commandsC/my_grep.c.o
 
 .PHONY : commandsC/my_grep.o
@@ -458,9 +431,6 @@ help:
 	@echo "... commandsC/my_cp.o"
 	@echo "... commandsC/my_cp.i"
 	@echo "... commandsC/my_cp.s"
-	@echo "... commandsC/my_cp2.o"
-	@echo "... commandsC/my_cp2.i"
-	@echo "... commandsC/my_cp2.s"
 	@echo "... commandsC/my_grep.o"
 	@echo "... commandsC/my_grep.i"
 	@echo "... commandsC/my_grep.s"

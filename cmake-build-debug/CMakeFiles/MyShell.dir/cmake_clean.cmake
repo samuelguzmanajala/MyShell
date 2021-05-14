@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyShell.dir/commandsC/game.c.o"
   "CMakeFiles/MyShell.dir/commandsC/my_cat.c.o"
   "CMakeFiles/MyShell.dir/commandsC/my_cp.c.o"
-  "CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o"
   "CMakeFiles/MyShell.dir/commandsC/my_grep.c.o"
   "CMakeFiles/MyShell.dir/commandsC/my_help.c.o"
   "CMakeFiles/MyShell.dir/commandsC/my_ls.c.o"

@@ -3,10 +3,9 @@
 //
 
 #include <stdio.h>
-#include "../commandsH/my_cp2.h"
 
 
-int myCp(int argc, char *argv[]){
+int main(int argc, char *argv[]){
     FILE *fp;
     FILE *fp2;
     FILE *target;

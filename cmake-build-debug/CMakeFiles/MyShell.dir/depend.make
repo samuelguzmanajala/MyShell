@@ -4,7 +4,6 @@
 CMakeFiles/MyShell.dir/commandsC/game.c.o: ../commandsC/game.c
 CMakeFiles/MyShell.dir/commandsC/game.c.o: ../commandsH/game.h
 CMakeFiles/MyShell.dir/commandsC/game.c.o: ../commandsH/my_cat.h
-CMakeFiles/MyShell.dir/commandsC/game.c.o: ../commandsH/my_cp2.h
 CMakeFiles/MyShell.dir/commandsC/game.c.o: ../myShell0.h
 
 CMakeFiles/MyShell.dir/commandsC/my_cat.c.o: ../commandsC/my_cat.c
@@ -12,9 +11,6 @@ CMakeFiles/MyShell.dir/commandsC/my_cat.c.o: ../commandsH/my_cat.h
 
 CMakeFiles/MyShell.dir/commandsC/my_cp.c.o: ../commandsC/my_cp.c
 CMakeFiles/MyShell.dir/commandsC/my_cp.c.o: ../commandsH/my_cp.h
-
-CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o: ../commandsC/my_cp2.c
-CMakeFiles/MyShell.dir/commandsC/my_cp2.c.o: ../commandsH/my_cp2.h
 
 CMakeFiles/MyShell.dir/commandsC/my_grep.c.o: ../commandsC/my_grep.c
 CMakeFiles/MyShell.dir/commandsC/my_grep.c.o: ../commandsH/my_grep.h
@@ -38,7 +34,7 @@ CMakeFiles/MyShell.dir/commandsC/test.c.o: ../myShell0.h
 
 CMakeFiles/MyShell.dir/myShell0.c.o: ../commandsH/game.h
 CMakeFiles/MyShell.dir/myShell0.c.o: ../commandsH/my_cat.h
-CMakeFiles/MyShell.dir/myShell0.c.o: ../commandsH/my_cp2.h
+CMakeFiles/MyShell.dir/myShell0.c.o: ../commandsH/my_cp.h
 CMakeFiles/MyShell.dir/myShell0.c.o: ../commandsH/my_grep.h
 CMakeFiles/MyShell.dir/myShell0.c.o: ../commandsH/my_help.h
 CMakeFiles/MyShell.dir/myShell0.c.o: ../commandsH/my_ls.h

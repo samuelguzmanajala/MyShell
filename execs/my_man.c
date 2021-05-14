@@ -45,6 +45,5 @@ int myMan(int argc, char* argv[])
     }
 
     fclose(fptr);
-    exit(0);
     return 0;
 }

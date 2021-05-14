@@ -2,24 +2,24 @@
 // Created by samuelguzman on 6/5/21.
 //
 //COLORS OF STORY SCRIPT
-    //COMMANDS = RED -----  EJEMPLO--> printf("\033[0;31m"); PONER COLOR
-    //printf("Hello\n"); MENSAJE A PRINTEAR
-    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
-    //PLAYER = PURPLE ----- EJEMPLO--> printf("\033[0;35m"); PONER COLOR
-    // printf("Hello\n"); MENSAJE A PRINTEAR
-    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
-    //NARRATOR = CYAN ----- EJEMPLO--> printf("\033[0;36m"); PONER COLOR
-    // printf("Hello\n"); MENSAJE A PRINTEAR
-    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
-    //REST OF CHARACTERS = GREEN ----- EJEMPLO--> printf("\033[0;32m"); PONER COLOR
-    // printf("Hello\n"); MENSAJE A PRINTEAR
-    // printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+//COMMANDS = RED -----  EJEMPLO--> printf("\033[0;31m"); PONER COLOR
+//printf("Hello\n"); MENSAJE A PRINTEAR
+// printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+//PLAYER = PURPLE ----- EJEMPLO--> printf("\033[0;35m"); PONER COLOR
+// printf("Hello\n"); MENSAJE A PRINTEAR
+// printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+//NARRATOR = CYAN ----- EJEMPLO--> printf("\033[0;36m"); PONER COLOR
+// printf("Hello\n"); MENSAJE A PRINTEAR
+// printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
+//REST OF CHARACTERS = GREEN ----- EJEMPLO--> printf("\033[0;32m"); PONER COLOR
+// printf("Hello\n"); MENSAJE A PRINTEAR
+// printf("\033[0m"); RESTABLECER A COLOR PREDETERMINADO
 
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
 #include "../commandsH/game.h"
-#include "../commandsH/my_cp2.h"
+//#include "../commandsH/my_cp2.h"
 #include "../myShell0.h"c
 #include "../commandsH/my_cat.h"
 #include <sys/types.h>
@@ -707,7 +707,7 @@ int myGame (void) {
     printf("\033[0;36m");
     printf("\n*Our brave hero throws the huge and juicy steak towards the dragon*\n");
     printf("\033[0;31m");
-    printf("\n*Make use of command mv in order to move the steak closer to the dragon*\n");
+    printf("\n*Make use of command mv in order to move the steak closer to the dragon, put 'mv steak Dragon'*\n");
     printf("\033[0m"); //Resets the text to default color
 
     loop=true;
@@ -741,7 +741,7 @@ int myGame (void) {
     printf("\nYoung hero: Oh yeah, makes sense, it must be related to that paper in grandpa Ricardo’s room\n"
            "talking about the command cp.\n");
     printf("\033[0;31m");
-    printf("\n*Make use of the command cp in order to duplicate the Master Sword*\n");
+    printf("\n*Make use of the command cp in order to duplicate the Master Sword*, put 'cp sword'\n");
     printf("\033[0m"); //Resets the text to default color
     loop=true;
     while (loop){
@@ -832,7 +832,7 @@ int myGame (void) {
 
     //////////AÑADIR CONDICIONES////////
     printf("\033[0;36m");
-    printf("\nView your bag*\n");
+    printf("\n*View your bag*\n");
     loop=true;
     while (loop){
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
@@ -859,7 +859,7 @@ int myGame (void) {
            "your uncle Yayo el Muyayo. Thanks to this game you should be able to face the real adventure,\n"
            "which is the tough life of an Operating Systems developer. Never give up, with much effort and\n"
            "perseverance anything is possible!\n");
-    printf("\\033[0;33m");
+    //printf("\\033[0;33m");
     printf("\nTHE END\n");
     printf("");
 

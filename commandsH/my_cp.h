@@ -1,10 +1,8 @@
 //
-// Created by samuelguzman on 30/3/21.
+// Created by samuelguzman on 20/4/21.
 //
 
 #ifndef MYSHELL_MY_CP_H
 #define MYSHELL_MY_CP_H
-int ms_cp(char **args);
-int ms_mv(char **args);
+int myCp(int argc, char *argv[]);
 #endif //MYSHELL_MY_CP_H
-

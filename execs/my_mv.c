@@ -8,13 +8,12 @@
 #include <dirent.h>
 #include <unistd.h>
 #include <string.h>
-#include<stdio.h>
-#include<stdlib.h>
 
 
-int myMv(int argc, char* argv[]){
 
-    char newLocation[200];
+int main(int argc, char* argv[]){
+
+    char newLocation[100];
 
     char *file= argv[1];
     char *location= argv[2];
@@ -54,7 +53,7 @@ int myMv(int argc, char* argv[]){
 
             }else{
                 char *path;
-                path = getcwd(newLocation, 200);//Current working directory path
+                path = getcwd(newLocation, 100);//Current working directory path
                 strcat(newLocation,"/");
                 strcat(newLocation,location);		//Concat mv location to the path
                 strcat(newLocation,"/");
@@ -64,7 +63,7 @@ int myMv(int argc, char* argv[]){
                 //rename(file,path)
 
                 if(rename(file,path)!=-1){
-                    // printf("directorio: \n%s\n",file);
+                   // printf("directorio: \n%s\n",file);
                     printf("Successful\n");
                     link(file, location);
                     unlink(location);
