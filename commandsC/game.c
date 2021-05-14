@@ -115,14 +115,14 @@ int myGame (void) {
 
     sleep(0);
     printf("\033[0;31m");
-    printf("\nQuick reminder, you can use help whenever you want if you don’t remember how the commandsC work.\n");
+    printf("\nQuick reminder, you can use 'man game' whenever you want if you don’t remember how the commandsC work.\n");
     printf("\033[0m");
     loop=true;
     while (loop){
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
             execute(argc, args);
         }
-        if(strcmp(args[0],"man")==0){
+        if(strcmp(args[0],"man")==0 && strcmp(args[1],"game")==0){
             loop=false;
         }
     }
@@ -140,7 +140,7 @@ int myGame (void) {
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
             execute(argc, args);
         }
-        if(strcmp(args[0],"ls")==0){
+        if(strcmp(args[0],"ls")==0 && strcmp(args[1],"-l")==0 && strcmp(args[2],".")==0){
             loop=false;
         }
     }
@@ -157,7 +157,7 @@ int myGame (void) {
         if (read_args(&argc, args, MAXARGS, &eof) && argc > 0) {
             execute(argc, args);
         }
-        if(strcmp(args[0],"ls")==0){
+        if(strcmp(args[0],"ls")==0&& strcmp(args[1],".")==0){
             loop=false;
         }
     }
@@ -224,7 +224,7 @@ int myGame (void) {
         }
     }
     printf("\033[0;36m");
-    printf("\n*Our young hero goes upstairs to the second floor*\n");
+    printf("\n*Our young hero goes upstairs to the SecondFloor*\n");
     printf("\033[0m");
 
 
@@ -389,7 +389,7 @@ int myGame (void) {
     printf("\n*Narrator dramatically states*: Chop chop hero, uncle Yayo el Muyayo’s screams are clearly audible from\n"
            "across the street.\n");
     printf("\033[0;31m");
-    printf("\n*Make use of the command cd with full path in order to move to the directory MainStreet*\n");
+    printf("\n*Make use of the command cd with full path or '..' in order to move to the directory MainStreet*\n");
     printf("\033[0m");
 
     pw = getpwuid(getuid());
@@ -588,9 +588,9 @@ int myGame (void) {
 
     printf("\033[0;36m");
     printf("\n*Narrator*: Once our brave hero reaches uncle’s house, he/she proceeds to fight the ruthless\n"
-           "dragon which is on the second floor.\n");
+           "dragon which is on the SecondFloor.\n");
     printf("\033[0;31m");
-    printf("\n*Make use of the command cd in order to access the second floor*\n");
+    printf("\n*Make use of the command cd in order to access the SecondFloor*\n");
     printf("\033[0m"); //Resets the text to default color
 
     loop=true;
@@ -719,7 +719,6 @@ int myGame (void) {
             loop=false;
         }
     }
-    //////////AÑADIR CONDICIONES////////
 
     printf("\033[0;36m");
     printf("\n*Narrator*: The dragon blindly follows the scent of the juicy steak thrown by our brave hero\n"
@@ -741,7 +740,7 @@ int myGame (void) {
     printf("\nYoung hero: Oh yeah, makes sense, it must be related to that paper in grandpa Ricardo’s room\n"
            "talking about the command cp.\n");
     printf("\033[0;31m");
-    printf("\n*Make use of the command cp in order to duplicate the Master Sword*, put 'cp sword'\n");
+    printf("\n*Make use of the command cp in order to increase the power of the Sword*, put 'cp sword'\n");
     printf("\033[0m"); //Resets the text to default color
     loop=true;
     while (loop){
@@ -830,7 +829,6 @@ int myGame (void) {
         }
     }
 
-    //////////AÑADIR CONDICIONES////////
     printf("\033[0;36m");
     printf("\n*View your bag*\n");
     loop=true;
@@ -842,9 +840,10 @@ int myGame (void) {
             loop=false;
         }
     }
+    sleep(2);
 
     printf("\033[0;36m");
-    printf("\n*The resulting swords are called Enma and Wado Ichimonji thanks to the increased power obtained\n"
+    printf("\n*The resulting swords is called Master sword thanks to the increased power obtained\n"
            "thanks to the duplication of the Master Sword.*\n");
     printf("\n*Narrator*: While our brave hero was trying to take the new and more powerful swords, the dragon\n"
            "leaped on the hero trying to reach its neck.\n");
@@ -852,16 +851,18 @@ int myGame (void) {
     printf("\nOur brave hero screams energetically: Too many lives were taken by you, die already, you goddamn\n"
            "dragon! AHHHHHHHH!\n");
     printf("\033[0;36m");
-    printf("\n*Narrator*: Our brave hero manages to take the swords on time and beheads the dragon with Enma\n"
-           "and Wado Ichimonji, the powerful swords.\n");
+    printf("\n*Narrator*: Our brave hero manages to take the sword on time and beheads the dragon with Master sword\n"
+           " ,the powerful sword.\n");
     printf("\n*The dragon disappears into thin air leaving a dense cloud of black smoke*\n");
     printf("\n*Narrator*: Congratulations hero, you managed to save your beloved town Mitochondria and also\n"
            "your uncle Yayo el Muyayo. Thanks to this game you should be able to face the real adventure,\n"
            "which is the tough life of an Operating Systems developer. Never give up, with much effort and\n"
            "perseverance anything is possible!\n");
-    //printf("\\033[0;33m");
+    printf("\033[0;33m");
     printf("\nTHE END\n");
+    //printf("\033[0m");
     printf("");
+
 
 
 }
@@ -1199,7 +1200,7 @@ int setup(){
     while ((count = read(fp, buffer, sizeof(buffer))) != 0){
         write(target, buffer, count);
     }
-    chmod(dir,7000);
+    chmod(dir,0000);
 
     close(fp);
     close(target);
@@ -1255,7 +1256,7 @@ int setup(){
         write(target, buffer, count);
     }
 
-    chmod(dir,7000);
+    chmod(dir,0000);
 
     close(fp);
     close(target);
@@ -1313,7 +1314,7 @@ int setup(){
         write(target, buffer, count);
     }
 
-    chmod(dir,7000);
+    chmod(dir,0000);
 
     close(fp);
     close(target);
