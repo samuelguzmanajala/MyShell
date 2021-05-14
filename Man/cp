@@ -1,0 +1,23 @@
+NAME
+       	cp - copy files and directories
+
+SYNOPSIS
+
+cp [OPTION]... SOURCE... DIRECTORY
+
+
+DESCRIPTION
+
+The cp command copies the source file specified by the (Source) parameter to the destination file specified by the (Directory) parameter.
+
+SEE ALSO
+
+       	copyFile(), open(), creat(), write(), strcat(), chdir()
+
+REPORTING BUGS
+
+       	No bugs encountered
+
+AUTHOR
+
+	 Written by Ainara Escribano Viteri

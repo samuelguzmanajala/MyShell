@@ -1,0 +1,22 @@
+NAME
+grep- print lines that match patterns
+
+SYNOPSIS
+
+       	grep [option...] [patterns] [file...]
+
+DESCRIPTION
+
+grep  searches  for  PATTERNS  in  each  FILE.  PATTERNS is one or  patterns separated by newline characters,  and  grep  prints  each line that matches a pattern.
+
+SEE ALSO
+
+      	 getLine(), fgets(), strstr(), executeGrep(), fopen()
+
+REPORTING BUGS
+
+No bugs encountered
+
+AUTHOR
+
+ Written by Ainara Escribano Viteri

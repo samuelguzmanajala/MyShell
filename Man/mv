@@ -1,0 +1,22 @@
+NAME
+          mv - move (rename) files
+
+SYNOPSIS
+
+mv [OPTION]... SOURCE... DIRECTORY
+
+DESCRIPTION
+
+To move a file into a directory using the mv command pass the name of the file and then the directory.  This command is a command line utility that moves files or directories from one place to another . It supports moving single files, multiple files and directories.
+
+SEE ALSO
+
+       	strcat(), rename(), link(), opendir(), unlink(), closedir()
+
+REPORTING BUGS
+
+       	No bugs encountered
+
+AUTHOR
+
+	 Written by Ainara Escribano Viteri

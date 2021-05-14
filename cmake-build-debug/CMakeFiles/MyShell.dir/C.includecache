@@ -6,39 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/samuelguzman/CLionProjects/MyShell/commandsC/game.c
-stdio.h
+/home/samuelguzman/CLionProjects/MyShell/commandsC/my_ls.c
+../commandsH/my_ls.h
+/home/samuelguzman/CLionProjects/MyShell/commandsH/my_ls.h
+stdlib.h
 -
 unistd.h
 -
-string.h
+dirent.h
 -
-../commandsH/game.h
-/home/samuelguzman/CLionProjects/MyShell/commandsH/game.h
-../myShell0.h
-/home/samuelguzman/CLionProjects/MyShell/myShell0.h
-../commandsH/my_cat.h
-/home/samuelguzman/CLionProjects/MyShell/commandsH/my_cat.h
-sys/types.h
+stdio.h
 -
 sys/stat.h
 -
-stdlib.h
--
-fcntl.h
--
-sys/wait.h
--
-stdbool.h
--
-pwd.h
--
-dirent.h
+string.h
 -
 
-/home/samuelguzman/CLionProjects/MyShell/commandsH/game.h
-
-/home/samuelguzman/CLionProjects/MyShell/commandsH/my_cat.h
-
-/home/samuelguzman/CLionProjects/MyShell/myShell0.h
+/home/samuelguzman/CLionProjects/MyShell/commandsH/my_ls.h
 

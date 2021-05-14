@@ -1,0 +1,22 @@
+NAME
+       	pwd-prints the current working directory
+
+SYNOPSIS
+
+		pwd [OPTION]...
+
+DESCRIPTION
+
+To print the current working directory run the pwd command.The full path of the current working directory will be printed to standard output.
+
+SEE ALSO
+
+       	getcwdir()
+
+REPORTING BUGS
+
+      	No bugs encountered
+
+AUTHOR
+
+	 Written by Ainara Escribano Viteri
