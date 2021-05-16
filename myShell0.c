@@ -26,7 +26,7 @@
 #define error(a) {perror(a); exit(1);};
 #define MAXLINE 200
 #define MAXARGS 20
-int fd[2];//fileDescriptor
+
 
 
 /////////// reading commandsC:
@@ -81,8 +81,31 @@ int read_args(int* argcp, char* args[], int max, int* eofp)
 
 ///////////////////////////////////////
 
+
+int sortcat(int argc, char* argv[]){
+    int fd[2];
+
+    pipe(fd);
+
+    pid_t pid = fork();
+    if (pid == 0)
+    {
+        close(fd[0]); //close read from pipe, in parent
+        dup2(fd[1], STDOUT_FILENO); // Replace stdout with the write end of the pipe
+        close(fd[1]); // Don't need another copy of the pipe write end hanging about
+        myCat(argc,argv);
+    }
+    else
+    {
+        close(fd[1]); //close write to pipe, in child
+        dup2(fd[0], STDIN_FILENO); // Replace stdin with the read end of the pipe
+        close(fd[0]); // Don't need another copy of the pipe read end hanging about
+        execlp("sort", "sort", NULL);
+    }
+}
+
 void execute2(int numberOfArgs,char **parsed){
-    //pipes();
+
     if(strcmp(parsed[0], "grep") == 0){
         executeGrep(numberOfArgs, parsed);
     }
@@ -115,8 +138,13 @@ void execute2(int numberOfArgs,char **parsed){
         myMan(numberOfArgs,parsed);
     }if(strcmp(parsed[0],"history")==0){
         execvp(parsed[0],parsed);
+    }if(strcmp(parsed[0],"sortcat")==0){
+        //printf("ha llegado");
+        sortcat(numberOfArgs,parsed);
     }
 }
+
+
 
 int execute(int argc, char *argv[])
 {
@@ -208,6 +236,11 @@ int execute(int argc, char *argv[])
 
 main ()
 {
+    int pipeFDs[2];
+    if (pipe(pipeFDs) < 0){
+        printf("no pipes");
+    }
+
     char * Prompt = "myShell0> ";
     int eof= 0;
     int argc;

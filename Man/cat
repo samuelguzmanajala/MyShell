@@ -1,0 +1,22 @@
+NAME
+       	cat- reads files sequentially, writing them to standard output.
+
+SYNOPSIS
+
+       	cat [OPTIONS] [FILES_NAMES]
+
+DESCRIPTION
+
+The cat command is one of the most frequently used flexible commands on Linux, Apple Mac OS X, Unix, *BSD (FreeBSD / OpenBSD / NetBSD) operating systems.
+This command’s utility shall read files in sequence and shall write their contents to the standard output in the same sequence.
+SEE ALSO
+
+       	write(), read()
+
+REPORTING BUGS
+
+       	No bugs encountered
+
+AUTHOR
+
+	   Written by Ainara Escribano Viteri

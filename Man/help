@@ -1,0 +1,22 @@
+NAME
+help- displays information about shell built-in commands.
+
+SYNOPSIS
+
+       	help [OPTIONS] [PATTERN...]
+
+DESCRIPTION
+
+The pattern specified in the syntax above refers to the command about which you would like to know and if it is matched with any shell built-in command then help give details about it and if it is not matched then help prints the list of help topics for your convenience.
+
+SEE ALSO
+
+      	 exHelp(), strcmp(), printf()
+
+REPORTING BUGS
+
+No bugs encountered
+
+AUTHOR
+
+ Written by Ainara Escribano Viteri

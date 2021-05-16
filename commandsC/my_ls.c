@@ -13,42 +13,76 @@
 #include <string.h>
 //myls
 
-void getPermissions(struct stat sb, char* permissionString){
+void getPermissions(struct stat sb, char* permissionString) {
 
     //determine the filetype and add the corresponding character
     permissionString[0] = '-';
-    if(S_ISDIR(sb.st_mode)){
+    if (S_ISDIR(sb.st_mode)) {
         permissionString[0] = 'd';
     }
-    if(S_ISCHR(sb.st_mode)){
+    if (S_ISCHR(sb.st_mode)) {
         permissionString[0] = 'r';
     }
-    if(S_ISBLK(sb.st_mode)){
+    if (S_ISBLK(sb.st_mode)) {
         permissionString[0] = 'b';
     }
-    if(S_ISFIFO(sb.st_mode)){
+    if (S_ISFIFO(sb.st_mode)) {
         permissionString[0] = 'p';
     }
-    if(S_ISLNK(sb.st_mode)){
+    if (S_ISLNK(sb.st_mode)) {
         permissionString[0] = 'l';
     }
-    if(S_ISSOCK(sb.st_mode)){
+    if (S_ISSOCK(sb.st_mode)) {
         permissionString[0] = 's';
     }
 
 
     //check each permission and set the appropriate character
-    permissionString[1] = (sb.st_mode & S_IRUSR) == S_IRUSR ? 'r': '-';
-    permissionString[2] = (sb.st_mode & S_IWUSR) == S_IWUSR ? 'w': '-';
-    permissionString[3] = (sb.st_mode & S_IXUSR) == S_IXUSR ? 'x': '-';
-
-    permissionString[4] = (sb.st_mode & S_IRGRP) == S_IRGRP ? 'r': '-';
-    permissionString[5] = (sb.st_mode & S_IWGRP) == S_IWGRP ? 'w': '-';
-    permissionString[6] = (sb.st_mode & S_IXGRP) == S_IXGRP ? 'x': '-';
-
-    permissionString[7] = (sb.st_mode & S_IROTH) == S_IROTH ? 'r': '-';
-    permissionString[8] = (sb.st_mode & S_IWOTH) == S_IWOTH ? 'w': '-';
-    permissionString[9] = (sb.st_mode & S_IXOTH) == S_IXOTH ? 'x': '-';
+    if ((sb.st_mode & S_IRUSR) == S_IRUSR) {
+        permissionString[1] = 'r';
+    } else{
+        permissionString[1] = '-';
+    }
+    if ((sb.st_mode & S_IWUSR) == S_IWUSR) {
+        permissionString[2] = 'w';
+    } else{
+        permissionString[2] = '-';
+    }
+    if ((sb.st_mode & S_IXUSR) == S_IXUSR ) {
+        permissionString[3] = 'x';
+    } else{
+        permissionString[3] = '-';
+    }
+    if ((sb.st_mode & S_IRGRP) == S_IRGRP  ) {
+        permissionString[4] = 'r';
+    } else{
+        permissionString[4] = '-';
+    }
+    if ((sb.st_mode & S_IWGRP) == S_IWGRP  ) {
+        permissionString[5] = 'w';
+    } else{
+        permissionString[5] = '-';
+    }
+    if ((sb.st_mode & S_IXGRP) == S_IXGRP  ) {
+        permissionString[6] = 'x';
+    } else{
+        permissionString[6] = '-';
+    }
+    if ((sb.st_mode & S_IROTH) == S_IROTH  ) {
+        permissionString[7] = 'r';
+    } else{
+        permissionString[7] = '-';
+    }
+    if ((sb.st_mode & S_IWOTH) == S_IWOTH  ) {
+        permissionString[8] = 'w';
+    } else{
+        permissionString[8] = '-';
+    }
+    if ((sb.st_mode & S_IXOTH) == S_IXOTH  ) {
+        permissionString[9] = 'x';
+    } else{
+        permissionString[9] = '-';
+    }
 
     permissionString[10] = '\0';
 }
@@ -72,7 +106,7 @@ int myLs(int argc, char* argv[]){
             while((dt = readdir(directory)) != NULL){
                 char permissionString[11];
                 if(stat(dt->d_name, &sb) == -1){
-                    //perror(filename);
+                    printf("error getting permissions");
                 }
                 getPermissions(sb, permissionString);
                 printf("%s %i",permissionString, (int)sb.st_nlink);

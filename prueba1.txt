@@ -1,9 +1,9 @@
-1 casa
-2 perro
-3 casa
-4 perro
-5 casa
-6 perro
-7 casa
-8 perro
+casa
+perro
+casa
+perro
+casa
+perro
+casa
+perro
 

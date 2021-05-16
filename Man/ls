@@ -1,0 +1,29 @@
+NAME
+
+      	 ls - list directory contents
+
+
+SYNOPSIS
+
+       	ls [OPTION]... [FILE]...
+
+
+DESCRIPTION
+
+The ls command is a command-line utility for listing the contents of a directory or directories given to it via standard input. It writes results to standard output. The ls command supports showing a variety of information about files, sorting on a range of options and recursive listing.
+
+Mandatory arguments to long options are mandatory for short
+      	options too.
+The -l ( lowercase L) option tells ls to print files in a long listing format.
+The simple command of ls-l means to list files and directories. It has an option of -l, which lists the contents in a long format. It allows you to look through the file system.
+SEE ALSO
+
+       	 getPermissions(), strcmpt()
+
+REPORTING BUGS
+
+      	No bugs encountered.
+
+AUTHOR
+
+	 Written by Ainara Escribano Viteri

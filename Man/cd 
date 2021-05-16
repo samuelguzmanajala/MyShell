@@ -1,0 +1,22 @@
+NAME
+      	 cd - changes the working directory location
+
+SYNOPSIS
+
+       	cd [PATH]
+
+DESCRIPTION
+
+The correct way to write cd is the command name followed by a quoted        directory specification.CD changes the working directory location, making it possible to use relative paths for subsequent file specifications in command syntax.
+
+SEE ALSO
+
+          chdir(), setup(), myGame()
+
+REPORTING BUGS
+
+No bugs encountered.
+
+AUTHOR
+
+	  Written by Ainara Escribano Viteri
